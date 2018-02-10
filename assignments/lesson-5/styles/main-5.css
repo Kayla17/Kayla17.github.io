@@ -1,0 +1,245 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { 
+  /*-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;*/
+          box-sizing: border-box;
+}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    background-color: #82A5C0;
+    font-family: verdana, serif;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 100%;
+    margin: auto;
+}
+
+header {
+    background-color: #345670;
+/**** removes top gap but leaves gap in <main>. Commented out until <main> gap removal is figured out. ****/
+    /*position: relative;
+    bottom: 1.5em;*/
+}
+
+header h1 {
+    color: #FFF;
+    padding: 30px 0 0;
+    font-family: arial, sans-serif;
+    text-shadow: 4px 4px 8px #000;
+    font-size:8vw;
+}
+
+header img {
+    max-width: 10%;
+    float: left;
+    margin: 1.8em 0 .2rem 2%; 
+}
+
+header .subheading {
+    color: #DDD;
+    padding: 0 20px 15px 20px;
+    text-align: right;
+    font-family: georgia, serif;
+    text-shadow: 2px 2px 4px #000;
+}
+
+nav {
+/**** removes top gap leaves gap in <main>. Commented out until bottom gap removal is figured out. ****/
+    /*position: relative;
+    bottom: 1.5em;*/
+}
+
+nav button {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: .4em .7em;
+    background-color: #DDD;
+    border: double .1em #BBB;
+    color: #345670;
+    border-radius: 10%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3483C0;  
+}
+
+nav ul li {
+    display: none;
+    float: left;
+    border-right: solid .5px #82A5C0;  
+}
+
+nav ul li a {
+    display: block;
+    color: #DDD;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    color: #FFC038;
+    background-color: #076BB8;
+}
+
+nav ul li a:hover {
+    background-color: #074D83;
+}
+
+main {
+    max-width: 100%;
+    background-color: #A5C3DA;
+    padding: 20px;
+    /*position: relative;
+    bottom: 1.5em;*/
+}
+
+main h2 {
+    text-align: center;
+    padding: 0% 0 2%;
+}
+
+main figure { 
+    margin: 0 0 .2rem 2%; 
+    width: 96%;
+}
+
+main figure img { 
+    width: 100%;    
+}
+
+section {
+    margin: 0 0 .2rem 2%;
+    display: inline-block;
+    width: 96%;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    float: right;
+    max-width: 100%; /* fill the page in the small/phone view */
+    margin: 0 0 1em 1em;
+}
+
+article {
+    background-color: #FFF;
+    padding: 0 20px;
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+    box-shadow: 4px 4px 25px grey;
+}
+
+article h3 {
+    padding: 4% 0 0;
+}
+
+footer {
+    background-color: #345670;
+}
+footer aside {
+    color: #FFF;
+    background-color: #3483C0;
+    padding: 10px 10px;
+    text-align: center;
+}
+footer>p {
+    color: #DDD;
+    text-align: center;
+    padding: 0 0 20px;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Selectors and Class Selectors*/
+
+.forecast {
+    display: none; 
+    max-width: 100%;
+    
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1%;
+    border: solid .1em #CCC;
+    background-color: #FFF;
+    box-shadow: 4px 4px 20px grey;
+}
+
+.town-article {
+    overflow: auto;
+    /*zoom: 1;*/
+}
+
+h3 {
+    text-align: center;
+    font-family: arial, sans-serif;
+    padding: 0 1%;
+}
+
+.highlow, .current, .conditions {
+    font-family: georgia, serif;
+}
+
+.summary {
+    background-color: #FFF;
+    box-shadow: 5px 5px 25px grey;
+}
+
+.highlow {
+    text-align: center;
+}
+
+.current {
+    text-align: center;
+}
+
+.current img {
+    margin-left: 2%;
+    width:3em;
+}
+
+.conditions {
+    text-align: center;
+}
+
+p {
+    font-family: georgia, serif;
+}
+
+
+/*** for moving weather summary horizontally ***/
+/*
+.highlow {
+    display: inline-block;
+    display: relative;
+    float: left;
+    border: solid;
+}
+
+.current {
+    display: inline-block;
+    display: relative;
+    float: left;
+    border: solid;
+}
+
+.conditions {
+    display: inline-block;
+    display: relative;
+    float: left;
+    border:solid;
+} */
+
