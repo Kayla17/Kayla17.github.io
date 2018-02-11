@@ -100,6 +100,7 @@ main {
     max-width: 100%;
     background-color: #A5C3DA;
     padding: 20px;
+    /*** same issue as mentioned above ***/
     /*position: relative;
     bottom: 1.5em;*/
 }
@@ -107,6 +108,7 @@ main {
 main h2 {
     text-align: center;
     padding: 0% 0 2%;
+    text-shadow: 2px 2px 8px grey;
 }
 
 main figure { 
