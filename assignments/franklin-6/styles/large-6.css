@@ -1,0 +1,35 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+  article p.town-article img { width: 29.333%; }
+  
+/*added*/
+    
+   /* narrows nav bar
+    nav ul li a {
+        padding: .6rem 1rem;
+    } */
+    
+    header, nav, main, footer { 
+    max-width: 75%;
+    margin: auto;
+    }
+    
+    main {
+        max-width: 75%;
+    }
+    
+    .highlow, .current, .conditions {
+        padding: 0 15% 3% 15%;
+        font-size: 1.3vw;
+    }
+
+    header h1 {
+        font-size: 70px;
+    }
+    
+    main h2 {
+        font-size: 3vw;
+    }
+   
+}

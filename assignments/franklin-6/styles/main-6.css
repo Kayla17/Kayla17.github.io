@@ -1,0 +1,278 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { 
+  /*-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;*/
+          box-sizing: border-box;
+}  /* This wildcard applies to all elements ensuring a box layout model */
+
+
+body {
+    font-size: 16px;
+    background-color: #82A5C0;
+    font-family: verdana, sans-serif;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 100%;
+    margin: auto; /* don't know if this needs to be here */
+}
+
+
+/*** header ***/
+
+header {
+    background-color: #345670;
+    padding: .5rem 2%;
+}
+
+header h1 {
+    color: #FFF;
+    margin: 0 2% 00;
+    font-family: arial, sans-serif;
+    text-shadow: 4px 4px 8px #000;
+    font-size:8vw;
+}
+
+header img {
+    max-width: 10%;
+    float: left;
+    margin: 0 2%; 
+}
+
+header .subheading {
+    color: #DDD;
+    padding: 0 20px 15px 20px;
+    text-align: right;
+    font-family: georgia, serif;
+    text-shadow: 2px 2px 4px #000;
+}
+
+
+/*** navigation ***/
+
+nav {
+    background-color: #3483C0;;
+    font-family: Verdana, sans-serif;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #DDD;
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #DDD;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+
+/*** main ***/
+
+main {
+    max-width: 100%;
+    background-color: #A5C3DA;
+    padding: 20px; 
+}
+
+main h2 {
+    text-align: center;
+    font-family: "Roboto", Verdana, sans-serif;
+    font-size: 5vw;
+    padding: 0 0 4% 0;
+    margin: 0;
+    text-shadow: 2px 2px 8px grey;
+}
+
+
+/*** main image ***/
+
+main figure { 
+    margin: 0 0 .2rem 2%; 
+    width: 96%;
+}
+
+main figure img {  
+    width: 100%;  
+}
+
+
+/*** section ***/
+
+section {
+    margin: 0 0 .2rem 2%;
+    display: inline-block;
+    width: 96%;
+}
+
+
+/*** article ***/
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    float: right;
+    max-width: 100%; /* fill the page in the small/phone view */
+    margin: 0 0 1em 1em;
+}
+
+article {
+    background-color: #FFF;
+    padding: 0 20px;
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+    box-shadow: 4px 4px 25px grey;
+}
+
+article h3 {
+    padding: 4% 0 0;
+}
+
+.town-article {
+    overflow: auto;
+    /*zoom: 1;*/
+}
+
+
+/*** weather summary ***/
+
+.highlow, .current, .conditions {
+    font-family: georgia, serif;
+}
+
+.summary {
+    background-color: #FFF;
+    box-shadow: 5px 5px 25px grey;
+}
+
+.highlow {
+    text-align: center;
+}
+
+.current {
+    text-align: center;
+}
+
+.current img {
+    margin-left: 2%;
+    width:3em;
+}
+
+.conditions {
+    text-align: center;
+}
+
+
+/*** weather forecast ***/
+
+.forecast {
+    display: none; 
+    max-width: 100%;  
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1%;
+    border: solid .1em #CCC;
+    background-color: #FFF;
+    box-shadow: 4px 4px 20px grey;
+}
+
+
+/*** footer ***/
+
+footer {
+    background-color: #345670;
+    padding: .5rem 2%;
+}
+footer aside {
+    color: #FFF;
+    background-color: #3483C0;
+    padding: 10px;
+    margin: -.5em -.7em 0;
+    text-align: center;
+}
+
+footer>p {
+    color: #DDD;
+    text-align: center;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+
+/* Other Selectors*/
+
+h3 {
+    text-align: center;
+    font-family: arial, sans-serif;
+    padding: 0 1%;
+}
+
+p {
+    font-family: georgia, serif;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*** for moving weather summary horizontally ***/
+/*
+.highlow {
+    display: inline-block;
+    display: relative;
+    float: left;
+    border: solid;
+}
+
+.current {
+    display: inline-block;
+    display: relative;
+    float: left;
+    border: solid;
+}
+
+.conditions {
+    display: inline-block;
+    display: relative;
+    float: left;
+    border:solid;
+} */
+
