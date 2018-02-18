@@ -3,12 +3,7 @@
   
   article p.town-article img { width: 29.333%; }
   
-/*added*/
-    
-   /* narrows nav bar
-    nav ul li a {
-        padding: .6rem 1rem;
-    } */
+/*** margin format ***/
     
     header, nav, main, footer { 
     max-width: 75%;
@@ -19,17 +14,37 @@
         max-width: 75%;
     }
     
-    .highlow, .current, .conditions {
-        padding: 0 15% 3% 15%;
-        font-size: 1.3vw;
-    }
+    
+    /*** header ***/
 
     header h1 {
         font-size: 70px;
     }
     
+    
+    /*** main ***/
+    
     main h2 {
         font-size: 3vw;
+    }
+    
+    
+    /*** navigation ***/
+    
+    nav ul li {
+        font-size: 13.7px;
+    }
+    
+    nav ul li a {
+        padding: .8rem 1rem;
+    }
+    
+    
+    /*** weather summary ***/
+    
+    .highlow, .current, .conditions {
+        padding: 0 15% 3% 15%;
+        font-size: 1.3vw;
     }
    
 }
