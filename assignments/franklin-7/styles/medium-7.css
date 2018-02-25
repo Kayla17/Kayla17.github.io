@@ -1,0 +1,131 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+
+    /*** margin format ***/
+    
+    header, nav, main, footer { 
+    max-width: 90%;
+    margin: auto;
+    
+    }
+    
+    
+    /*** heading ***/
+    
+    .subheading {
+        font-size: 2.5vw; 
+    }
+    
+    
+    /*** weather forecast ***/
+    
+    section.forecast { 
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, .12);
+        border: .5px solid rgba(0, 0, 0,.1);
+        box-shadow: 0px 1px 5px gray;
+        border-radius: 5px;
+    }  /* show the 10-day forecast with the medium view and up */
+  
+    table {
+        width: 100%;
+    }
+    
+    /*** article ***/
+    
+    /** This gives a responsive image. Since week 7's instructions say not to use float (*sigh*), and flexbox is being such a pain, I've commented it out. =C **/
+    /*article p.town-article img { 
+        width: 62.666%; 
+        float:right; 
+        margin: 0 0 0 .8em;
+    }*/  /* responsive images */
+   
+    article img {
+        width: 60%;
+        max-height: 16em;
+    }
+    
+    article p {
+        width: 80%;
+    }
+    
+    /*** navigation ***/
+    
+    nav button { 
+        display: none; 
+    }  /* hides hamburger button */
+    
+    nav ul {
+        width: 100%;
+        margin: auto;
+        flex-direction: row;
+    }
+    
+    #primaryNav {
+        display: flex;
+    }
+    
+    nav ul li { 
+        /*float: left; (replaced with) display: flex; (seen above)*/
+        width: 16.66%;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    nav ul li a {
+        border: none;
+        border-right: .5px solid rgba(0,0,0,0.3);
+        border-left: .5px solid rgba(0,0,0,0.3);
+        padding: 1rem 0;
+    }
+    
+    
+    /*** main ***/
+    
+    main h2 {
+        font-size: 4vw;
+    }
+    
+     main figure img { 
+         width: 99%;
+    
+    }
+    
+    
+    /*** weather summary ***/
+    
+     .summary {
+         width: 50%;
+        font-size: 2vw;
+    }
+    
+    .highlow, .current, .conditions, .wchill {
+        padding: 0 10% 5% 15%;
+    }
+    
+    
+    /*** main image & weather summary ***/
+    
+    .image-summary {
+        display: flex;
+        width: 98%;
+    }
+    
+    
+    /*** footer ***/
+    
+    footer aside {
+        margin: 0 1em;
+    }
+    
+    
+    /************** Gallery Page ******************/
+    
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
