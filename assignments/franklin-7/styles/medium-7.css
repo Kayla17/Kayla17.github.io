@@ -68,9 +68,9 @@
     }
     
     nav ul li { 
-        /*float: left; (replaced with) display: flex; (seen above)*/
-        width: 16.66%;
-        text-align: center;
+        /*float: left; (replaced with flex properties*/
+        /*width: 16.66%;*/
+        flex: 1 1 0;
         font-size: 12px;
     }
     
