@@ -15,7 +15,7 @@ table, caption {
     box-shadow: 8px 8px 15px rgba(98, 140, 166, 1);
 }
 
-caption, thead, tbody, tfooter {
+caption, thead, tbody, tfoot {
     font-family: "Ubuntu", sans-serif;
 }
 
@@ -23,7 +23,7 @@ caption {
     background-color: #7FB9C2;
     border-bottom: none;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 th {
