@@ -1,0 +1,496 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { 
+    box-sizing: border-box;
+}  /* This wildcard applies to all elements ensuring a box layout model */
+
+
+body {
+    font-size: 16px;
+    background-color: #82A5C0;
+    font-family: verdana, sans-serif;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 100%;
+    margin: auto; /* don't know if this needs to be here */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/*** header ***/
+
+header {
+    background-color: #345670;
+    padding: .5rem 2%;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logoImage {
+    flex-basis: 12%;
+}
+
+header h1 {
+    color: #FFF;
+    margin: 0 1%;
+    font-family: arial, sans-serif;
+    text-shadow: 4px 4px 8px #000;
+    font-size:8vw;
+}
+
+header img {
+    width: 100%;
+    margin: 0 2%;
+}
+
+header .subheading {
+    color: #DDD;
+    padding: 0 20px 15px 20px;
+    text-align: right;
+    font-family: georgia, serif;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/**-- header end --**/
+/*** navigation ***/
+
+nav {
+    background-color: #3483C0;;
+    font-family: Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav button {
+    padding: .2rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #DDD;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    /*display: block;*//*if flex isn't used here, use this*/
+    padding: .8rem 2%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    text-decoration: none;
+    color: #DDD;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/**-- navigation end --**/
+/*** main ***/
+
+main {
+    max-width: 100%;
+    background-color: #A5C3DA;
+    padding: 20px; 
+}
+
+main h2 {
+    text-align: center;
+    font-family: "Roboto", verdana, sans-serif;
+    color: #1A1616;
+    font-size: 5vw;
+    padding: 0 0 4% 0;
+    margin: 0;
+    text-shadow: 2px 2px 8px grey;
+}
+
+/**-- main end --**/
+/*** main image ***/
+
+main figure { 
+    margin: 0 0 .2rem 2%; 
+    width: 96%;
+}
+
+main figure img {  
+    width: 100%;  
+    border-radius: 2px;
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.3);
+}
+
+/**-- main image end --**/
+/*** section ***/
+
+section {
+    margin: 0 0 0 2%;
+    width: 96%;
+}
+
+/**-- section end --**/
+/*** article ***/
+
+/**this works when medium view has float set and franklin has original article arrangement**/
+/*article {
+    background-color: #FFF;
+    padding: 0 20px;
+    margin: 15px 0 .2rem 2%;
+    width: 96%;
+    box-shadow: 4px 4px 25px grey;
+    display: flex;
+    flex-direction: column;
+}*/
+
+.town-article {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    background-color: #FFF;
+    margin: 15px 0 .2rem 2%;
+    width: 96%;
+    box-shadow: 4px 4px 25px grey;
+    border-radius: 2px;
+}
+
+article h3 {
+    margin: 0;
+    padding: 2%;
+}
+
+article img {
+    width: 90%;
+    border-radius: 2px;
+}
+
+article p {
+    width: 90%;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    /*float: right;*/ /*changed with the above flex*/
+    width: 100%; /* fill the page in the small/phone view */
+    padding: 0 0 2%;
+}
+
+.town-article {
+    overflow: auto;
+    /*zoom: 1;*/
+}
+
+/**-- article end --**/
+/*** weather summary ***/
+
+.highlow, .current, .conditions {
+    font-family: georgia, serif;
+}
+
+.summary {
+    background-color: #FFF;
+    box-shadow: 5px 5px 25px grey;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1rem 2%;
+    border-radius: 2px;
+}
+
+.highlow, .current, .conditions, .wchill {
+    text-align: center;
+}
+
+.current img {
+    margin-left: 2%;
+    width: 2.5em;
+}
+
+/**-- weather summary end --**/
+/*** weather forecast ***/
+
+.forecast {
+    display: none;  
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1%;
+    border: solid .1em #CCC;
+    background-color: #FFF;
+    box-shadow: 4px 4px 20px grey;
+}
+
+/**-- weather forecast end --**/
+/*** footer ***/
+
+footer {
+    background-color: #345670;
+    padding: .5rem 2%;
+}
+
+footer aside {
+    color: #FFF;
+    background-color: #3483C0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+}
+
+footer>p {
+    color: #DDD;
+    text-align: center;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/**-- footer end --**/
+/** Other Selectors **/
+
+h3 {
+    text-align: center;
+    font-family: arial, sans-serif;
+    padding: 0 1%;
+}
+
+p {
+    font-family: georgia, serif;
+}
+
+/** Franklin Town Data **/
+
+.frankdata {
+    background-color: #FFF;
+    width: 96%;
+    margin: auto;
+    box-shadow: 4px 4px 25px grey;
+    border-radius: 2px;
+    margin-bottom: 4%;
+}
+
+.frankdata h3 {
+    padding-top: 4%;
+}
+
+.frankdata p {
+    margin-left: 13%;  
+    margin-right: 8%;
+}
+
+.frankdata ul {
+    text-align: left;
+    margin: 0 8%;
+    font-family: arial, sans-serif;
+    font-size: 15px;
+    list-style-type: circle;
+    padding-bottom: 4%;
+    line-height: 25px;
+}
+
+/**-- Franklin Town Data end --**/
+/**-- Other Selectors --**/
+/*----- Clearfix: Force an Element not to collapse -----*/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**-- Clearfix end --**/
+/*****--- Franklin Page / main styles end ---*****/
+/********** Gallery Page **********/
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 2em;
+    grid-row-gap: 5px;
+    
+    width: 90%;
+    margin: auto;
+}
+
+.images img {
+    width: 100%; 
+}
+
+.images {
+    padding: 2%;
+}
+
+/****-- Gallery Page end --***/
+/********** Storm Center **********/
+
+p.explain {
+    background-color: #FFF;
+    padding: 4%;
+    border-radius: 3px;
+    box-shadow: 3px 2px 6px rgba(0,0,0,0.3);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background-color: #FFF;
+    border: groove 2px #4D6E88;
+    margin-bottom: 2%;
+    font-size:14px;
+    border-radius: 5px;
+    box-shadow: 4px 2px 10px rgba(0,0,0,0.3);
+}
+
+label {
+    padding: 4% 0;
+}
+
+label span {
+    display:flex;
+}
+
+.subfield {
+    border: solid 1px gray;
+    width: 100%;
+    margin: auto;
+    padding-left: 3%;
+    background-color: whitesmoke;
+    box-shadow: none;
+    border-radius: 4px;
+}
+
+legend {
+    background-color: #FFF;
+    border: solid 1.5px #475866;  
+    padding: 1%;
+    color: #585858;
+    border-radius: 7px;
+    background-color: #FFE7C7;
+}
+
+  .stormScale {
+    display: flex;
+    flex-direction: column; 
+}
+
+.scale1, .scale2 {
+    padding: 3% 0;
+    font-size: 13px;
+}
+
+.radioBtn {
+    display: flex;
+    flex-direction: row;
+}
+
+.answer1, .answer2, .answer3 {
+    padding: .5em 4% 0 0;  
+}
+
+input[type=text], input[type=tel], input[type=email], input[type=number], input[type=date] {
+    background-color: whitesmoke;
+    border-radius: 4px;
+    padding: 1%;
+}
+
+textarea {
+    width: 100%;
+    height: 10em;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+/**button**/
+.submitButton {
+    padding: 2% 6%;
+    border-radius: 15px;
+    background-color: #FFE7C7;
+    border: outset 1.8px #4D6E88;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.3);
+    margin-left: 10%;
+    color: #585858;
+    font-family: verdana, sans-serif;
+}
+
+.submitButton:hover {
+    background-color: #FFEFDA;
+    color: #484848;
+}
+
+.subtext {
+    font-size: 13px;
+    font-family: verdana, sans-serif;
+    margin-left: 10%;
+    padding-top: 1%;
+}
+
+.req {
+   color: #A9232A; 
+}
+
+/***-- Storm Center end --***/
+/********** Thanks Page **********/
+
+.thx {
+    background-color: #FFF;
+    margin: auto;
+    margin-bottom: 20%; /* remove this when I stick footer to bottom of page */
+    width: 96%;
+    box-shadow: 4px 4px 25px grey;
+    padding: 2%;
+    text-align: center;
+    border-radius: 3px;
+}
+
+/***-- Thanks Page end --***/
+/********** Homepage **********/
+
+.hometitle {
+    padding: 0;
+}
+
+.json {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.json p {
+    width: 100%;
+    margin: auto;
+    padding: 0 2% 4% 2%;
+}
+
+.json h3 {
+    padding: 4%;
+}
+
+/***-- Homepage end --***/

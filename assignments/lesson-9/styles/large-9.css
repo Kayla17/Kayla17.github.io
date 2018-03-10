@@ -1,0 +1,153 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+/**this is for the cool text wrap**/  
+/*article p.town-article img { width: 29.333%; }*/
+  
+/*** margin format ***/
+    
+    header, nav, main, footer { 
+    max-width: 75%;
+    margin: auto;
+    }
+    
+    main {
+        max-width: 75%;
+    }
+    
+    /**-- margin format end --**/
+    /*** header ***/
+
+    header h1 {
+        font-size: 70px; 
+    }
+    
+    .logoImage {
+        /*width: 10%;*/
+        flex-basis: 10%;
+    }
+    
+    /**-- header end --**/
+    /*** main ***/
+    
+    main h2 {
+        font-size: 3vw;
+    }
+    
+    /**-- main end --**/
+    /*** navigation ***/
+    
+    nav ul li {
+        font-size: 13.7px;
+    }
+    
+    nav ul li a {
+        padding: .8rem 1rem;
+    }
+    
+    /**-- navigation end --**/
+    /*** weather forecast ***/
+    
+     table {
+        width: 100%;
+    }
+    
+    /**-- weather forecast end --**/
+    /*** weather summary ***/
+    
+    .highlow, .current, .conditions, .wchill {
+        padding: 0 15% 3% 15%;
+        font-size: 1.3vw;
+    }
+    
+    /**-- weather summary end --**/
+    /*** article ***/
+    
+    /** added after text to image wrap was commented out in large and medium style sheet **/
+    .town-article {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    article img {
+        padding: 2% 0 2% 2%;
+    }
+    
+    article p {
+        margin: 0;
+        padding: 2%;
+    }
+    
+    /**-- article end --**/
+    /** Franklin Town Data **/
+
+    .frankdata {
+        width: 61%;
+        margin: 0 0 2% 2%;
+    }
+
+    .frankdata h3 {
+        font-size: 1.6vw;
+    }
+
+    .frankdata p {
+        font-size: 1.3vw;
+    }
+
+    .frankdata ul {
+        font-size: 1.1vw;
+        margin-left: 20%;
+    }
+
+/**-- Franklin Town Data end --**/
+    /************ Gallery Page ***************/
+    
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .images:hover {
+        box-shadow: 1px -1px 10px #808080;
+        border-radius:4px;
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+    
+    /*****--- Gallery Page end ---*****/
+    /********** Storm Center Page ************/
+    
+     p.explain {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2%;
+    }
+    
+    .form {
+        width: 70%;
+        margin: auto;
+    }
+    
+    legend {
+        font-size: 16px;
+        padding: 2% 4%;
+        margin-left: -8%;
+    }
+    
+    .fieldset1, .fieldset2 {
+        padding: 0 10%;
+    }
+    
+    /*****--- Storm Center Page end ---*****/
+     /*********** Thanks Page ***********/
+    
+    .thx {
+        width: 75%;
+    }
+    
+    /*****--- Thanks Page end ---*****/
+ 
+    .json {
+    width: 80%;
+}
+    
+    
+}
