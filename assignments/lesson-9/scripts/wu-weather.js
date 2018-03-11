@@ -15,5 +15,5 @@ request.onload = function() {
     
     document.getElementById('windspeed').innerHTML = franklinWeather.current_observation.wind_mph;
     
-    document.getElementById('txtForecast').innerHTML = franklinWeather.forecast.txt_forecast.forecastday["0"];
+    document.getElementById('txtForecast').innerHTML = franklinWeather.forecast.txt_forecast.forecastday["0"].fcttext;
 }

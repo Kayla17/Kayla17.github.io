@@ -223,6 +223,8 @@ article p.town-article img {  /* This structure refers to img elements that are 
 
 .highlow, .current, .conditions, .wchill, .textForecast {
     text-align: center;
+    width: 70%;
+    margin: auto;
 }
 
 .current img {

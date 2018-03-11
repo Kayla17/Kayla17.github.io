@@ -101,6 +101,8 @@
     
     .highlow, .current, .conditions, .wchill, .textForecast {
         padding: 0 10% 5% 15%;
+        width: 100%;
+        margin: auto;
     }
     
     /*** main image & weather summary ***/
