@@ -221,7 +221,7 @@ article p.town-article img {  /* This structure refers to img elements that are 
     border-radius: 2px;
 }
 
-.highlow, .current, .conditions, .wchill {
+.highlow, .current, .conditions, .wchill, .textForecast {
     text-align: center;
 }
 

@@ -99,7 +99,7 @@
         font-size: 2vw;
     }
     
-    .highlow, .current, .conditions, .wchill {
+    .highlow, .current, .conditions, .wchill, .textForecast {
         padding: 0 10% 5% 15%;
     }
     
