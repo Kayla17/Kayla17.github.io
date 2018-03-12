@@ -144,7 +144,12 @@
     }
     
     /*****--- Thanks Page end ---*****/
+    /******--- Homepage ---******/
  
+     .welcome {
+        width: 60%;
+    }
+    
     .json {
     width: 80%;
 }

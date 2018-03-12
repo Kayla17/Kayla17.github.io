@@ -176,7 +176,11 @@
     
     /*****--- Thanks Page end ---*****/
     /********* Homepage ***********/
-
+    
+    .welcome {
+        width: 75%;
+    }
+    
     .json {
         display: flex;
         flex-direction: row;
