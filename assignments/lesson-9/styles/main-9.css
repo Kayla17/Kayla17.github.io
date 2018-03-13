@@ -513,4 +513,14 @@ textarea {
     padding: 4%;
 }
 
+.json ul {
+    text-align: left;
+    margin: 0 8%;
+    font-family: arial, sans-serif;
+    font-size: 15px;
+    list-style-type: circle;
+    padding-bottom: 4%;
+    line-height: 25px;
+}
+
 /***-- Homepage end --***/

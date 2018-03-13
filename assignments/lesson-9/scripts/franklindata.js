@@ -1,5 +1,5 @@
  
-var section = document.querySelector('.frankdata');
+var frankdata = document.querySelector('.frankdata');
 
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
@@ -51,6 +51,6 @@ function showData(jsonObj) {
         mySection.appendChild(myPara5);
         mySection.appendChild(myList);
         
-        section.appendChild(mySection);
+        frankdata.appendChild(mySection);
     }
 }

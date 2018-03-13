@@ -151,8 +151,13 @@
     }
     
     .json {
-    width: 80%;
-}
+        width: 90%;
+        flex-direction: row;
+    }
     
+    .json ul {
+        padding-left:10%;
+    }
+     
     
 }
