@@ -35,7 +35,7 @@
     
     /*** article ***/
     
-    /** This gives a responsive image. Since week 7's instructions say not to use float (*sigh*), and flexbox is being such a pain, I've commented it out. =C **/
+    /** responsive text and image. **/
     /*article p.town-article img { 
         width: 62.666%; 
         float:right; 

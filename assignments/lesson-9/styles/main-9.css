@@ -261,7 +261,7 @@ footer {
 }
 
 footer aside {
-    color: #FFF;
+    color: #EEE;
     background-color: #3483C0;
     padding: 10px;
     text-align: center;
@@ -279,7 +279,7 @@ footer>p {
 }
 
 .termUse:hover {
-    color: #DDD;
+    color: #BBB;
 }
 
 /**-- footer end --**/

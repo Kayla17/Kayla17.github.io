@@ -1,9 +1,6 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
   
-/**this is for the cool text wrap**/  
-/*article p.town-article img { width: 29.333%; }*/
-  
 /*** margin format ***/
     
     header, nav, main, footer { 
@@ -63,7 +60,7 @@
     /**-- weather summary end --**/
     /*** article ***/
     
-    /** added after text to image wrap was commented out in large and medium style sheet **/
+    /** added after wrap image/text was removed **/
     .town-article {
         display: flex;
         flex-direction: row;
@@ -77,6 +74,9 @@
         margin: 0;
         padding: 2%;
     }
+    
+    /**wraps image/text when above is removed**/  
+    /*article p.town-article img { width: 29.333%; }*/
     
     /**-- article end --**/
     /** Franklin Town Data **/
