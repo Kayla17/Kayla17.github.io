@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Springfield Weather Forecasts and Conditions - PreciseWeather</title>
+  <meta name="author" content="Danica Christensen">
+  <meta name="description" content="Weather forecasts and conditions for the city of Springfield">
+  <!-- external style references in the proper cascading order --> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  
+  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+    <div class=flexContainer>
+        <div class="logoImage">
+            <img src="images/sun-logo-150.png" alt="The site logo">
+        </div>
+        <div class="precWeath">
+            <h1>PreciseWeather</h1>
+        </div>
+    </div>
+    <div class="subheading">Real Weather, Real Forecasts</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav class="clearfix">
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li class="active"><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>The City of Springfield</h2>
+    <div class="image-summary">
+        <figure>
+            <img src="images/franklin-500-default.jpg" sizes="90vw" alt="Franklin"
+                srcset="images/franklin-580-small.jpg 600w, images/franklin-590-medium.jpg 1020w, images/franklin-720-large.jpg 1400w"> 
+        </figure>
+        <section class="summary">
+            <h3>Weather Summary</h3> 
+            <div class="current">
+                <span id="weatherCondition">weather condition</span>
+                <picture>
+                    <img  id="weather_icon" src="images/sun-100.png" alt="current weather">  <!-- validation error when src value is empty. Is there an alternative? -->
+                </picture>
+            </div> 
+            <div class="highlow">
+                <p>Temperature: <span id="temp"></span>&deg;F</p> 
+            </div>
+            <div class="conditions">
+                <p>Precipitation: 0&#37;</p>  
+                <p>Wind Speed: <span id="windspeed"></span>5 mph</p>  
+            </div> 
+            <div class="wchill">
+                <p>Windchill: <span id="windchill">wind chill</span></p>
+            </div>
+            <div class="textForecast">
+                <p>Forecast: <span id="txtForecast">text forecast</span></p>
+            </div>
+        </section>
+    </div>
+      
+    <!--<section class="frankdata"></section>-->
+      
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Hottest Summer Since 1954</h3>	
+      <div class="town-article">
+        <img src="images/desert-dry-tree-350.jpg" alt="dry tree">
+        <p class="franklin-article">Franklin City broke its record last month with the hottest summer since 1954, with sweltering days reaching a high of 119 degrees Fahrenheit. Experts agree, this kind of heat hasn't been seen in Franklin since 1954's June temperatures of 116 degrees Fahrenheit. Combined with this year's unusually dry spell, ranchers and farmers alike wonder what this could mean for future yields. "This year's been particularly rough," Sam Goldman, a local rancher, said last Friday. "If we've another year like this, I don't know what I'll do." Mayor Fredrich is aware of the situation and reassures Franklin inhabitants that measures will be taken if necessary. "This is alarming," Fredrich said at the last city council meeting, "but current weather figures are good. Temperatures have dropped considerably this July and there is promise of rainy showers coming in August." The people of Franklin can only hope this dry spell will soon end.
+        </p>
+      </div>
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <aside>
+        PreciseWeather &#8226; 123 Main St. Franklin &#8226; MU 83454 &#8226; &#35;&#40;999&#41; 999 9999 &#8226; contact@PreciseWeather.com
+    </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved &verbar; Danica Christensen &verbar; PreciseWeather &verbar; <a class="termUse" href="#">terms of use</a> &verbar; <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windchill.js"></script>
+  <!--<script src="scripts/franklindata.js"></script>-->
+  <script src="scripts/wu-weather.js"></script>
+  
+  
+</body>
+</html>
