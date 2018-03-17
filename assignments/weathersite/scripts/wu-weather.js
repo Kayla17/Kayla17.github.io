@@ -1,3 +1,5 @@
+//beginning Franklin data
+
 var requestURL = '//api.wunderground.com/api/997fa104ce7cd04a/conditions/forecast/q/MN/Franklin.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL, true);
@@ -28,3 +30,5 @@ request.onload = function() {
     
     document.getElementById('txtForecast').innerHTML = franklinWeather.forecast.txt_forecast.forecastday["0"].fcttext;
 }
+
+//end Franklin data
