@@ -28,7 +28,7 @@ request.onload = function() {
     
     document.getElementById('windspeed').innerHTML = greenvilleWeather.current_observation.wind_mph;
     
-   // document.getElementById('windchill').innerHTML = greenvilleWeather.current_observation.windchill_f;
+   //document.getElementById('windchill').innerHTML = greenvilleWeather.current_observation.windchill_f;
     
     document.getElementById('txtForecast').innerHTML = greenvilleWeather.forecast.txt_forecast.forecastday["0"].fcttext;
 }

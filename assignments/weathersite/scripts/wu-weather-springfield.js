@@ -9,6 +9,16 @@ request.onload = function() {
     var springfieldWeather = JSON.parse(request.responseText);
     console.log(springfieldWeather);
     
+    //windchill info start
+    /*
+    var windspeed = springfieldWeather.current_observation.wind_mph;
+    
+    var temperature = springfieldWeather.current_observation.temp_f;
+    
+    var f = 35.74 + .6215 * temperature - 35.75 * Math.pow(windspeed, .16) + .4275 * temperature * Math.pow(windspeed, .16);
+    */
+    //windchill info end
+    
     document.getElementById('weatherCondition').innerHTML = springfieldWeather.current_observation.weather;
     
     document.getElementById('temp').innerHTML = springfieldWeather.current_observation.temp_f;
@@ -28,9 +38,12 @@ request.onload = function() {
     
     document.getElementById('windspeed').innerHTML = springfieldWeather.current_observation.wind_mph;
     
-    document.getElementById('windchill').innerHTML = springfieldWeather.current_observation.windchill_f;
+    //document.getElementById('windchill').innerHTML = springfieldWeather.current_observation.windchill_f;
     
     document.getElementById('txtForecast').innerHTML = springfieldWeather.forecast.txt_forecast.forecastday["0"].fcttext;
+    
+    //call windchill
+    //document.getElementById('windchill').innerHTML = (f.toFixed(0));
 }
 
 //end Springfield data
