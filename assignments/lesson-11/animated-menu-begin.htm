@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animated Menu</title>
+	<link rel="stylesheet" href="css/animated-menu.css">
+</head>
+<body>
+	<ul class="navigation">
+		<li>About Us</li>
+		<li>Services</li>
+		<li>Catalog</li>
+		<li>Blog</li>
+		<li>Contact</li>
+	</ul>
+    
+    <!-- Local jQuery (and old version)-->
+    <!--<script src="js/jquery-2.2.1.min.js"></script>-->
+    
+    <!--External jQuery (new version)-->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <script>
+	$(function(){
+		// All jQuery code goes here
+
+        $('.navigation > li').hover(function(){
+            //This code executes when the mouse pointer is over the lsit item
+            
+            $(this).addClass('openSesame');
+            
+        }, function(){
+            //This code executes when the mouse pointer leaves the list item
+            
+            $(this).removeClass('openSesame');
+            
+        })
+        
+	})
+	</script>
+</body>
+</html>
