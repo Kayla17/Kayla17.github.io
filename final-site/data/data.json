@@ -1,11 +1,10 @@
 {
-  "prices" : [
+  "repairs-prices" : [
   {
-    "name": "$7.99",
-    "motto": "$8.99",
-    "yearFounded": "$6.99",
-    "currentPopulation": "$8.99",
-    "averageRainfall": 21
+    "chain": "$7.99",
+    "brakes": "$8.99",
+    "innerTube": "$6.99",
+    "handleBar": "$8.99",
   }
  ]
 }
