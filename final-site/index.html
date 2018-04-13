@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke - Bike Products, Tours, and Events</title>
+  <meta name="author" content="Danica Christensen">
+  <meta name="description" content="Home page for The Mountain Spoke">
+ 
+  <!--Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/normalize.css" rel="stylesheet"> 
+    
+  <!-- small view styles -->    
+  <link href="styles/main.css" rel="stylesheet">    
+  <!-- medium view styles -->
+  <link href="styles/medium.css" rel="stylesheet">  
+  <!-- large views styles -->
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class=flexContainer>
+        <div class="logoImage">
+            <img src="images/logo-design.jpg" alt="A bike logo">
+        </div>
+        <h1>The Mountain Spoke</h1>
+    </div>
+  </header>
+    
+  <nav class="clearfix">
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li class="active"><a href="index.html">Home</a></li>
+    	<li><a href="tours.html">Tours</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="sales.html">Sales</a></li>
+    	<li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>Welcome to The Mountain Spoke!</h2>
+    
+    <p class="welcome">Here at The Mountain Spoke, we offer a large array of bike services.  From bike sales and repairs to our daily tours and annual events, The Mountain Spoke covers all your bike needs.</p>
+      
+   	<div class="container-images">
+        <div class="twoimages">
+            <img src="images/bike-racer-600.jpg" alt="image of someone racing on a bike">
+        </div>
+        <div class="twoimages">
+            <img src="images/bike-group-riders-600.jpg" alt="image of a group of bike racers">
+        </div>
+    </div>
+    
+    <div class="eventImg">
+        <div class="indexImg">
+            <a href="events.html">
+                <img src="images/bike-trail-500.jpg" alt="image of cyclists in an autumn setting">
+                <p class="index-maintxt">Cycle the Continental Divide</p>
+                <p class="index-txt">(Learn more about this year's event)</p>
+            </a>
+        </div>
+        <div class="indexImg">
+            <a href="tours.html">
+                <img src="images/biker-on-trail-500.jpg" alt="image of a motorbike on the mountain trail">
+                <p class="index-maintxt">Deep Mountain Tour</p>
+                <p class="index-txt">(Learn more about daily tours)</p>
+            </a>
+        </div>
+        <div class="indexImg">
+            <a href="sales.html">
+                <img src="images/bike-girl-500.jpg" alt="image of a woman leaning against a bike">
+                <p class="index-maintxt">New and used bikes for sale</p>
+                <p class="index-txt">(Check out our deals)</p>
+            </a>
+        </div>
+    </div>
+  </main>
+    
+  <aside>
+        The Mountain Spoke &#8226; 3950 Valley Commons Drive Bozeman, MT  &#8226; &#35;&#40;406&#41;&#45;444&#45;6990 &#8226; contact&#64;mountainspoke.com
+  </aside>
+    
+  <footer>
+        <p class="footer-bar">&copy;2018 All Rights Reserved &verbar; Danica Christensen &verbar; The Mountain Spoke &verbar; <a class="cite" href="sources.html">resources</a> &verbar; <a class="video" href="video.html">video overview</a> &verbar; <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>	
+  <script src="scripts/wayfinding.js"></script>
+
+</body>
+</html>

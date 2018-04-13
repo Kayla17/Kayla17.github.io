@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Tours - The Mountain Spoke</title>
+  <meta name="author" content="Danica Christensen">
+  <meta name="description" content="Daily tours offered by The Mountain Spoke">
+    
+  <!--Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/normalize.css" rel="stylesheet"> 
+    
+  <!-- small view styles -->    
+  <link href="styles/main.css" rel="stylesheet">    
+  <!-- medium view styles -->
+  <link href="styles/medium.css" rel="stylesheet">  
+  <!-- large views styles -->
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class=flexContainer>
+        <div class="logoImage">
+            <img src="images/logo-design.jpg" alt="A bike logo">
+        </div>
+        <h1>The Mountain Spoke</h1>
+    </div>
+  </header>
+  
+  <nav class="clearfix">
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li class="active"><a href="index.html">Home</a></li>
+    	<li><a href="tours.html">Tours</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="sales.html">Sales</a></li>
+    	<li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>Adventure Tours</h2>
+    
+    <section class="tour">
+      <h3>Great Valley Tour</h3>	
+      <div class="tours">
+        <img src="images/biker-in-nature-600.jpg" alt="person riding bike through grass">
+        <ul>
+            <li>Length of tour: 2 to 3 hours <span class="emph">(dependent on overall speed)</span></li>
+            <li>Skill Level: 3, <span class="emph">"Adventurer"</span></li>
+            <li>Distance: 40 miles</li>
+            <li>When: Every day!</li>
+            <li>Age: 12 and up</li>
+            <li>Cost: $34.99</li>
+            <li>Location: Valley West, Bozeman MT</li>
+        </ul>
+      </div>
+      <div class="cycle-info">
+          <p><span class="weight">Information:</span> Enjoy a ride through Bozeman's beautiful West Valley. The Great Valley Tour showcases two gorgeous lakes and stunning mountain ranges.</p>
+      </div>
+    </section>	
+      
+    <section class="tour">
+      <h3>Deep Mountain Tour</h3>	
+      <div class="tours">
+        <img src="images/bike-nature-600.jpg" alt="man with bike standing on a mountain">
+        <ul>
+            <li>Length: 4 to 5 hours <span class="emph">(dependent on overall speed)</span></li>
+            <li>Skill Level:  5, <span class="emph">"The Long Journey"</span></li>
+            <li>Distance: 60 miles</li>
+            <li>When: Every day!</li>
+            <li>Age: 17 and up</li>
+            <li>Cost: $54.99</li>
+            <li>Location: Palisade Falls <span class="emph">(near Bozeman MT)</span></li>
+        </ul>
+      </div>
+      <div class="cycle-info">
+          <p><span class="weight">Information:</span> Traverse steep mountain trails and rocky terrain in this Deep Mountain Tour. The trail snakes around the beautiful Palisade Falls, occasionally showering riders with cool mist.</p>
+      </div>
+    </section>	
+      
+    <aside class="skill-lvl">
+      <p class="weight">Skill Level Rankings:</p>
+        <p>1, <span class="emph">"Meditation"</span> 1hr or less</p>
+      <p>2, <span class="emph">"A Jaunt Through Nature"</span> 2hrs or less</p>
+      <p>3, <span class="emph">"Adventurer"</span> 3hrs or less</p>
+      <p>4, <span class="emph">"Voyager"</span> 4hrs or less</p>
+        <p>5, <span class="emph">"The Long Journey"</span> 5hrs or less</p>
+        <p>6, <span class="emph">"All Out!"</span> 5.5hrs or more</p>
+    </aside>
+  </main>
+    
+  <footer>
+      <p class="footer-bar">&copy;2018 All Rights Reserved &verbar; Danica Christensen &verbar; The Mountain Spoke &verbar; <a class="cite" href="sources.html">resources</a> &verbar; <a class="video" href="video.html">video overview</a> &verbar; <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/wayfinding.js"></script>
+</body>
+</html>

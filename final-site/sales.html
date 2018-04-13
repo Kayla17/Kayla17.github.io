@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sales and Deals - The Mountain Spoke</title>
+    <meta name="author" content="Danica Christensen">
+    <meta name="description" content="Sales and deals for The Mountain Spoke pruducts">
+    
+    <!--Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/normalize.css" rel="stylesheet"> 
+    
+    <!-- small view styles -->    
+    <link href="styles/main.css" rel="stylesheet">    
+    <!-- medium view styles -->
+    <link href="styles/medium.css" rel="stylesheet">  
+    <!-- large views styles -->
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class=flexContainer>
+        <div class="logoImage">
+            <img src="images/logo-design.jpg" alt="A bike logo">
+        </div>
+        <h1>The Mountain Spoke</h1>
+    </div>
+  </header>
+    
+  <nav class="clearfix">
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="tours.html">Tours</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="sales.html">Sales</a></li>
+    	<li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>Sales</h2>
+       
+    <div class="fadein">
+        <div class="slide"><img src="images/bicycle-600.jpg" alt="image of a black mountain bike"><h4>NIGHT HAWK 2</h4></div>
+        <div class="slide"><img src="images/bike-blue-600.jpg" alt="image of a blue Kawasaki motorbike"><h4>2017 NINJA 300 ABS</h4></div>
+        <div class="slide"><img src="images/bike-sunset-600.jpg" alt="image of a silver bike on the beach with the sun setting behind it"><h4> COPPERHEAD 29 RSI</h4></div>
+    </div>
+       
+    <div class="great-deals"><h3>Some of this week's great deals!</h3></div>
+       
+    <div class="bike-images">
+        <div class="images">
+            <img src="images/bike-black-indoor-400.jpg" alt="image of black framed bike">
+            <ul class="bullets">
+                <li>Model: VULTURE 1</li>
+                <li>Price: $779</li>
+                <li>Condition: Like New</li>
+                <li>Great for gravel and dirt trails. In fantastic working condition. Chain has been oiled and pedals have been freshly polished for maximum efficiency.</li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="images/bike-blue-front-400.jpg" alt="image of blue motorbike">
+            <ul class="bullets">
+                <li>Model: 2018 VERSYS 650 LT</li>
+                <li>Price: $2500</li>
+                <li>Condition: Excellent</li>
+                <li>Runs on loose dirt and gravel. Great for use on mountain trails. Has light wear on tires but works like new. Has brand new battery and new coat of paint.</li>
+            </ul>
+        </div>
+        <div class="images">
+            <img src="images/bike-gray-black-400.jpg" alt="image of gray and black motorbike">
+            <ul class="bullets">
+                <li>Model: Z900RS</li>
+                <li>Price: $2100</li>
+                <li>Condition: Good</li>
+                <li>Runs best on even ground and hard packed dirt trails. Oil and tires have been recently changed. The exterior has some minor scratches.</li>
+            </ul>
+        </div>
+    </div>
+       
+    <div class="sales-para">
+        <p>We have new stock every day! Call &#35;&#40;406&#41;&#45;444&#45;6990 to hear about our most recent inventory!</p>
+    </div>
+  </main>
+    
+  <footer>
+    <p class="footer-bar">&copy;2018 All Rights Reserved &verbar; Danica Christensen &verbar; The Mountain Spoke &verbar; <a class="cite" href="sources.html">resources</a> &verbar; <a class="video" href="video.html">video overview</a> &verbar; <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+    
+  <!--External jQuery-->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!--Local jQuery-->
+  <!--<script src="js/jquery-3.3.1.min.js"></script>-->
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/wayfinding.js"></script>
+  <script src="scripts/jquery-slideshow.js"></script>
+    
+</body>
+</html>

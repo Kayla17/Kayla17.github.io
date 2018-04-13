@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Annual Events - The Mountain Spoke</title>
+  <meta name="author" content="Danica Christensen">
+  <meta name="description" content="Annual events for the Mountain Spoke">
+    
+  <!--Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/normalize.css" rel="stylesheet"> 
+    
+  <!-- small view styles -->    
+  <link href="styles/main.css" rel="stylesheet">    
+  <!-- medium view styles -->
+  <link href="styles/medium.css" rel="stylesheet">  
+  <!-- large views styles -->
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class=flexContainer>
+        <div class="logoImage">
+            <img src="images/logo-design.jpg" alt="A bike logo">
+        </div>
+        <h1>The Mountain Spoke</h1>
+    </div>
+  </header>
+
+  <nav class="clearfix">
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li class="active"><a href="index.html">Home</a></li>
+    	<li><a href="tours.html">Tours</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="sales.html">Sales</a></li>
+    	<li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>Events</h2>
+    <section class="contDiv">
+      <h3>Cycle the Continental Divide</h3>	
+      <div class="tours">
+        <img src="images/bike-closeup-600.jpg" alt="image of the wheels and legs of a biker in motion">
+          <ul>
+            <li>Length: 5 to 8 hours <span class="emph">(dependent on overall speed)</span></li>
+            <li>Skill Level: 6, <span class="emph">"All Out!"</span></li>
+            <li>Distance: 100 miles</li>
+            <li>When: August 10, 11, and 13, 2018 <span class="emph">(starts at 6:15 a.m.)</span></li>
+            <li>Requirements: Some biking experience</li>
+            <li>Age: 18 and up</li>
+            <li>Cost: $59.99 <span class="emph">(per day)</span></li>
+            <li>Location: Gallatin National Forest <span class="emph">(near Bozeman MT)</span></li>
+        </ul>
+      </div>
+      <div class="cycle-info">
+        <p><span class="weight">Information:</span> The Mountain Spoke's annual event, <span class="emph">The Continental Divide</span>, will be held at Gallatin National Forest this year. Bikers will experience the breathtaking beauty of Gallatin National Forest as they travel through lush woods, near deep canyons, up mountains, and around streams and waterfalls. Prepare for steep mountain trails, rugged paths, and windy roads.</p>
+      </div>
+    </section>		 
+
+    <section>
+        <div>
+            <fieldset class="mainfieldset">
+                <form action="thanks.html" name="thanksPage">
+                    <h3 class="reg">Registration Form for <br><span class="emph">Cycle the Continental Divide</span> </h3>
+                <label>
+                    <span>Full Name:<span class="req">&#42;</span></span>
+                    <input type="text" name="fullname" placeholder="full name" pattern="[a-zA-Z ]{5,99}" required>
+                </label>
+                <label>
+                    <span>Birth Date:</span>
+                    <input type="date" name="date">
+                </label>
+                <label>
+                    <span>Email:</span> 
+                    <input type="email" name="email" placeholder="email@gmail.com">
+                </label>
+                <label>
+                    <span>Phone:<span class="req">&#42;</span></span>
+                    <input type="tel" name="phone" placeholder="&#35;phone number" pattern="[0-9]{10,20}" required>
+                </label>
+                <label>
+                    <span>Zip Code:<span class="req"><span class="req">&#42;</span></span></span>
+                    <input type="number" name="zip" placeholder="zip code" required>
+                </label>
+                <label>
+                    <span>Country or State:<span class="req">&#42;</span></span>
+                    <input type="text" name="countrystate" placeholder="country or State" pattern="[a-zA-Z ]{2,99}" required>
+                </label>
+                <span class="varify">I am 18 years of age or older:<span class="req">*</span></span>
+                <span class="radioBtn">
+                    <label class="answer1">
+                        <input type="radio" name="varify"  value="yes" required>Yes
+                    </label>
+                    <label class="answer2">
+                        <input type="radio" name="varify" value="no">No
+                    </label>
+                </span>
+                <label>
+                    <span class="txt">Special Accommodations or Comments:</span>     
+                    <textarea name="textarea" placeholder="Additional comments...."></textarea>
+                </label> 
+                <input type="submit" name="button" value="Submit" class="submitButton">
+                <p class="subtext"><span class="req">&#42;</span>required fields</p>
+                </form>
+            </fieldset>
+        </div>
+   </section>  
+  </main>
+    
+  <footer>
+      <p class="footer-bar">&copy;2018 All Rights Reserved &verbar; Danica Christensen &verbar; The Mountain Spoke &verbar; <a class="cite" href="sources.html">resources</a> &verbar; <a class="video" href="video.html">video overview</a> &verbar; <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/wayfinding.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bike Services - The Mountain Spoke</title>
+  <meta name="author" content="Danica Christensen">
+  <meta name="description" content="Bike services for The Mountain Spoke">
+    
+  <!--Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/normalize.css" rel="stylesheet"> 
+    
+  <!-- small view styles -->    
+  <link href="styles/main.css" rel="stylesheet">    
+  <!-- medium view styles -->
+  <link href="styles/medium.css" rel="stylesheet">  
+  <!-- large views styles -->
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+     <div class=flexContainer>
+        <div class="logoImage">
+            <img src="images/logo-design.jpg" alt="A bike logo">
+        </div>
+        <h1>The Mountain Spoke</h1>
+     </div>
+  </header>
+    
+  <nav class="clearfix">
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li class="active"><a href="index.html">Home</a></li>
+    	<li><a href="tours.html">Tours</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="sales.html">Sales</a></li>
+    	<li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>Bike Services</h2>
+      
+    <div class="service-intro">
+        <p>We offer a variety of affordable bike services at The Mountain Spoke. See our daily services and affordable prices below.</p>
+    </div>
+      
+    <table class="serviceTable">
+        <tbody class="tbody-json"></tbody>
+    </table>
+      
+    <div class="note">
+        <p>Have questions? Call &#35;&#40;406&#41;&#45;444&#45;6990 for more details.</p>
+    </div>
+  </main>
+    
+  <footer>
+    <p class="footer-bar">&copy;2018 All Rights Reserved &verbar; Danica Christensen &verbar; The Mountain Spoke &verbar; <a class="cite" href="sources.html">resources</a> &verbar; <a class="video" href="video.html">video overview</a> &verbar; <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/wayfinding.js"></script>
+  <script src="scripts/json-prices.js"></script>
+    
+</body>
+</html>

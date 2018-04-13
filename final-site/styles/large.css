@@ -1,0 +1,209 @@
+@media only screen and (min-width: 64em) {
+  /***- Computer View Stylesheet -***/
+  
+    /*** margin format ***/
+    
+    header, nav, main, aside, footer { 
+    max-width: 75%;
+    margin: auto;
+    }
+    
+    main {
+        max-width: 75%;
+    }
+    
+    /**-- margin format end --**/
+    /*** header ***/
+
+    header h1 {
+        font-size: 5.5vw; 
+    }
+    
+    .logoImage {
+        /*width: 10%;*/
+        flex-basis: 10%;
+    }
+    
+    /**-- header end --**/
+    /*** main ***/
+    
+    main h2 {
+        font-size: 3vw;
+    }
+    
+    /**-- main end --**/
+    /*** navigation ***/
+    
+    nav ul li {
+        font-size: 18px;
+    }
+    
+    nav ul li a {
+        padding: .75rem;
+    }
+    
+    /**-- navigation end --**/
+    /***** Homepage *****/
+ 
+     .welcome {
+        width: 60%;
+    }
+    
+    /** index gallery (2) **/
+
+    .container-images {
+        grid-column-gap: 3em;
+        padding: 0 5%;
+    }
+    
+    .twoimages img {
+        width: 100%; 
+    }
+
+    .twoimages {
+        padding: 0;
+    }
+
+    /*- index gallery end -*/
+    /** index event gallery (3) **/
+
+    .index-maintxt {
+        width: 90%;
+    }
+    
+    .index-txt {
+        width: 85%;
+        margin: 4% 0;
+    }
+    
+    /*- index event gallery (3) -*/
+    /***-- Homepage end --***/
+    /***** Tours Page *****/
+    
+    .tour, .contDiv {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 4%;
+    }
+    
+    .tours {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .tour img, .contDiv img {
+        width: 25vw;
+        margin: 2%;
+    }
+    
+    .tour ul, .contDiv ul {
+        margin: 0;
+        margin-bottom: 8px;
+    }
+    
+    .skill-lvl {
+        width: 60%;
+    }
+    
+    /**-- Tours Page end --**/
+    /***** Events Page *****/
+    
+    .reg {
+        margin: 8%;
+    }
+    
+    /***-- Events Page end --***/
+    /***** Sales Page *****/
+    /** Slide Show **/
+    
+     div.slide img {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        height: 25vw;
+    }
+    
+    div.slide h4 {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 20px;
+    }
+    
+    /*- Slide Show end -*/
+    
+    .sales-para {
+        margin-top: 2%;
+    }
+    
+    .bike-images {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 2%;
+    }
+    
+    .indexImg {
+        margin-bottom: 15%;
+    }
+    
+    .images:hover, .indexImg:hover {
+        box-shadow: 1px -1px 10px rgba(0,0,0,0.4);
+        border-radius: 8px;
+        background-color: #eee;
+    }
+    
+    /***-- Sales Page end --***/
+    /***** Services Page *****/
+    
+    .serviceTable {
+        width: 80%;
+    }
+    
+    .tbody-json {
+        font-size: 20px;
+    }
+    
+    .note, .service-intro, .contact-info {
+        width: 60%;
+    }
+    
+    /***-- Services Page end --***/
+    /***** Contact Page *****/
+    
+    .formtxt {
+        margin: 8% 0;
+    }
+    
+    /***-- Contact Page end --***/
+    /***** Forms for Events-pg & Contact-pg *****/
+    
+    form {
+        width: 70%;
+        margin: auto;
+    }
+    
+    .mainfieldset {
+        padding: 0;
+        margin: 0 20%;
+    }
+    
+    /***-- Forms end --***/
+     /***** Thanks Page *****/
+    
+    .thx {
+        width: 75%;
+    }
+    
+    /***-- Thanks Page end --***/
+    /***** Video Page *****/
+
+    video {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 10%;
+    }
+
+    /***-- video Page end --***/
+    
+    
+}

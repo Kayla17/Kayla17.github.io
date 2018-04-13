@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - The Mountain Spoke</title>
+  <meta name="author" content="Danica Christensen">
+  <meta name="description" content="Contact The Mountain Spoke with any comments or concerns">
+    
+  <!--Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/normalize.css" rel="stylesheet"> 
+    
+  <!-- small view styles -->    
+  <link href="styles/main.css" rel="stylesheet">    
+  <!-- medium view styles -->
+  <link href="styles/medium.css" rel="stylesheet">  
+  <!-- large views styles -->
+  <link href="styles/large.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class=flexContainer>
+        <div class="logoImage">
+            <img src="images/logo-design.jpg" alt="A bike logo">
+        </div>
+        <h1>The Mountain Spoke</h1>
+    </div>
+  </header>
+  
+  <nav class="clearfix">
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li class="active"><a href="index.html">Home</a></li>
+    	<li><a href="tours.html">Tours</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="sales.html">Sales</a></li>
+    	<li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>Contact Us</h2> 
+      
+      <section class="contact-info">
+          <h3>Store Location</h3>	
+          <div>
+            <p><span class="weight">The Mountain Spoke company address:</span></p>
+            <p>3950 Valley Commons Drive Bozeman, Montana</p>
+            <p><span class="weight">Email:</span> contact&#64;mountainspoke.com</p>
+            <p><span class="weight">Phone number:</span> &#35;&#40;406&#41;&#45;444&#45;6990</p>
+          </div>
+          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.931627756013!2d-111.09290082014728!3d45.67227287920614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523564837176" allowfullscreen></iframe>
+      </section>
+
+      
+    <section>
+        <div>
+            <fieldset class="mainfieldset">
+                <form action="thanks.html" name="thanksPage">
+                    <h3 class="formtxt"><span>Feel free to <strong>contact us</strong> with any feedback, comments, or concerns.</span></h3>
+                <label>
+                    <span>Full Name:<span class="req">&#42;</span></span>
+                    <input type="text" name="fullname" placeholder="full name" pattern="[a-zA-Z ]{5,99}" required>
+                </label>
+                <label>
+                    <span>Email:</span> 
+                    <input type="email" name="email" placeholder="email@gmail.com">
+                </label>
+                <label>
+                    <span>Phone:<span class="req">&#42;</span></span>
+                    <input type="tel" name="phone" placeholder="&#35;phone number" pattern="[0-9]{10,20}" required>
+                </label>
+                <label>
+                    <span class="txt">Comments, Feedback, or Concerns:</span>     
+                    <textarea name="textarea" placeholder="text goes here...."></textarea>
+                </label> 
+                <input type="submit" name="button" value="Submit" class="submitButton">
+                <p class="subtext"><span class="req">&#42;</span>required fields</p>
+                </form>
+            </fieldset>
+        </div>
+   </section>
+  
+  </main>
+    
+  <footer>
+        <p class="footer-bar">&copy;2018 All Rights Reserved &verbar; Danica Christensen &verbar; The Mountain Spoke &verbar; <a class="cite" href="sources.html">resources</a> &verbar; <a class="video" href="video.html">video overview</a> &verbar; <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/wayfinding.js"></script>
+  
+</body>
+</html>
